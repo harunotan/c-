@@ -1,7 +1,12 @@
 #include <stdio.h>
 
-int main()
+int main(int argv, char *argv[])
 {
-  printf("Hello world\n");
+ FILE *fp;
+  fp = fopen(*argv, "r+");
+  
+  
+  
+  fclose(fp);
   return 0;
 }
